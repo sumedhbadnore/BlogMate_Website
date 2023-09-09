@@ -1,0 +1,22 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <div class="create-blog content">
+        <form action="/api/register" method="POST">
+            <label for="username">Username :</label>
+            <input type="text" id="username" name="username" required maxlength="20">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required maxlength="30">  <!-- name attribute used to attach the contains to body of post method -->
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <button>Submit</button>
+            <h4>Already our user? click here to <a href="/">Login.</a></h4>
+        </form>
+    </div>
+    
+
+</body>
+</html>
